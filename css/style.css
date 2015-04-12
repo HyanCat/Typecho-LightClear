@@ -519,22 +519,24 @@ a:hover {
   color: #ff647e;
   text-shadow: 0 0 2px #f5ac5d;
 }
-@media only screen and (-webkit-max-device-pixel-ratio: 1.99), only screen and (max-moz-device-pixel-ratio: 1.99), only screen and (-o-max-device-pixel-ratio: 1.99), only screen and (max-device-pixel-ratio: 1.99) {
-  
+
+/* 普通屏幕 */
+@media only screen and (-webkit-max-device-pixel-ratio:1.99), only screen and (max-moz-device-pixel-ratio:1.99), only screen and (-o-max-device-pixel-ratio:1.99), only screen and (max-device-pixel-ratio:1.99) {
 }
-@media only screen and (-webkit-max-device-pixel-ratio: 1.99) and (max-width: 800px), only screen and (max-moz-device-pixel-ratio: 1.99) and (max-width: 800px), only screen and (-o-max-device-pixel-ratio: 1.99) and (max-width: 800px), only screen and (max-device-pixel-ratio: 1.99) and (max-width: 800px) {
+/* 普通屏幕 竖屏 */
+@media only screen and (-webkit-max-device-pixel-ratio:1.99) and (max-width:800px), only screen and (max-moz-device-pixel-ratio:1.99) and (max-width:800px), only screen and (-o-max-device-pixel-ratio:1.99) and (max-width:800px), only screen and (max-device-pixel-ratio:1.99) and (max-width:800px) {
   body {
     font-size: 80%;
   }
   .body {
     margin-left: 0;
   }
-  .post-title,
-  .post-meta {
+  .post-title, .post-meta {
     text-align: center;
   }
 }
-@media only screen and (-webkit-max-device-pixel-ratio: 1.99) and (min-width: 801px), only screen and (max-moz-device-pixel-ratio: 1.99) and (min-width: 801px), only screen and (-o-max-device-pixel-ratio: 1.99) and (min-width: 801px), only screen and (max-device-pixel-ratio: 1.99) and (min-width: 801px) {
+/* 普通屏幕 宽屏 */
+@media only screen and (-webkit-max-device-pixel-ratio:1.99) and (min-width:801px), only screen and (max-moz-device-pixel-ratio:1.99) and (min-width:801px), only screen and (-o-max-device-pixel-ratio:1.99) and (min-width:801px), only screen and (max-device-pixel-ratio:1.99) and (min-width:801px) {
   #header {
     position: fixed;
     top: 0;
@@ -550,22 +552,23 @@ a:hover {
     margin-left: 400px;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  
+/* retina 屏幕 */
+@media only screen and (-webkit-min-device-pixel-ratio:2), only screen and (min--moz-device-pixel-ratio:2), only screen and (-o-min-device-pixel-ratio:2), only screen and (min-device-pixel-ratio:2) {
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1536px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1536px), only screen and (-o-min-device-pixel-ratio: 2) and (max-width: 1536px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1536px) {
+/* retina 屏幕 && ipad 竖屏 */
+@media only screen and (-webkit-min-device-pixel-ratio:2) and (max-width:768px), only screen and (min--moz-device-pixel-ratio:2) and (max-width:768px), only screen and (-o-min-device-pixel-ratio:2) and (max-width:768px), only screen and (min-device-pixel-ratio:2) and (max-width:768px) {
   body {
     font-size: 80%;
   }
   .body {
     margin-left: 0;
   }
-  .post-title,
-  .post-meta {
+  .post-title, .post-meta {
     text-align: center;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1537px), only screen and (min--moz-device-pixel-ratio: 2) and (min-width: 1537px), only screen and (-o-min-device-pixel-ratio: 2) and (min-width: 1537px), only screen and (min-device-pixel-ratio: 2) and (min-width: 1537px) {
+/* retina 屏幕 && ipad 横屏 */
+@media only screen and (-webkit-min-device-pixel-ratio:2) and (min-width:769px), only screen and (min--moz-device-pixel-ratio:2) and (min-width:769px), only screen and (-o-min-device-pixel-ratio:2) and (min-width:769px), only screen and (min-device-pixel-ratio:2) and (min-width:769px) {
   #header {
     position: fixed;
     top: 0;
@@ -581,7 +584,8 @@ a:hover {
     margin-left: 400px;
   }
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 640px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 640px), only screen and (-o-min-device-pixel-ratio: 2) and (max-width: 640px), only screen and (min-device-pixel-ratio: 2) and (max-width: 640px) {
+/* retina 屏幕 && 手机 */
+@media only screen and (-webkit-min-device-pixel-ratio:2) and (max-width:640px), only screen and (min--moz-device-pixel-ratio:2) and (max-width:640px), only screen and (-o-min-device-pixel-ratio:2) and (max-width:640px), only screen and (min-device-pixel-ratio:2) and (max-width:640px) {
   body {
     font-size: 80%;
   }
@@ -591,8 +595,7 @@ a:hover {
   .post {
     padding-right: 0;
   }
-  .post-title,
-  .post-meta {
+  .post-title, .post-meta {
     text-align: center;
   }
 }
