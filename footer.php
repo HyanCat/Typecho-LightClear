@@ -18,17 +18,12 @@ if (!defined('__TYPECHO_ROOT_DIR__')) {
       未经许可禁止一切转载！<a href=""></a>
   </div>
     <?php _e('由 <a href="http://developer.baidu.com">BAE</a> 强力驱动');?>.
+
     <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="//cdn.bootcss.com/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+
     <?php $this->footer();?>
-    <script type="text/javascript">
-      $(function(){
-        $("img").not(".thumb").lazyload({
-          placeholder:"<?php $this->options->themeUrl('img/placeholder.gif');?>",
-          effect:"fadeIn"
-        });
-      });
-    </script>
+
 </footer><!-- end #footer -->
 </div><!-- end #body -->
 
