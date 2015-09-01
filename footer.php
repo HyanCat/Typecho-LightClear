@@ -20,7 +20,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) {
     <?php _e('由 <a href="http://developer.baidu.com">BAE</a> 强力驱动');?>.
 
     <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
-    <script src="//cdn.bootcss.com/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
 
     <?php $this->footer();?>
 
