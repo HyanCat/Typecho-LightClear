@@ -22,6 +22,7 @@ $this->archiveTitle(array(
     <link href="//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/grid.css');?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('css/style.css');?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('css/markdown.css');?>">
 
     <!--[if lt IE 9]>
     <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
